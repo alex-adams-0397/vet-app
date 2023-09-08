@@ -1,0 +1,20 @@
+{
+  "name": "vet-app",
+  "scripts": {
+    "start:frontend": "yarn workspace frontend dev",
+    "start:backend": "yarn workspace backend develop",
+    "start": "concurrently \"yarn start:frontend\" \"yarn start:backend\""
+  },
+  "version": "1.0.0",
+  "repository": "https://github.com/alex-adams-0397/vet-app.git",
+  "author": "alex,rasid",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
